@@ -1,2 +1,2 @@
-FROM openjdk:8u171-jre-alpine
+FROM openjdk:8u171-jdk
 MAINTAINER Name <tbatard@pivotal.io>
