@@ -1,6 +1,9 @@
 inputs:
 - name: master
 
+outputs:
+- name: build-artifact
+
 platform: linux
 
 image_resource:
@@ -13,4 +16,6 @@ run:
   path: sh
   args:
   - -c
-  - ./gradlew build
+  - |
+    ./gradlew build
+    cp build/libs/*.jar ../build-artifact/
