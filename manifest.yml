@@ -2,3 +2,4 @@ applications:
 - name: hello-spring
   path: build/libs/hello-spring-0.0.1-SNAPSHOT.jar
   buildpack: java_buildpack
+  random-route: true
